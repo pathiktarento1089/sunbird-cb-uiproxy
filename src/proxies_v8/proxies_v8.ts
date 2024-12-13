@@ -1134,7 +1134,7 @@ proxiesV8.use('/community/v1/*',
   proxyCreatorSunbird(express.Router(), `${CONSTANTS.KONG_API_BASE}`)
 )
 
-proxiesV8.use('/v1/recommendations/courses',
+proxiesV8.use('/recommendations/v1/courses',
   // tslint:disable-next-line: max-line-length
-  proxyCreatorSunbirdSearch(express.Router(), `${CONSTANTS.KONG_API_BASE}/v1/recommendations/courses`)
+  proxyCreatorSunbirdSearch(express.Router(), `${CONSTANTS.KONG_API_BASE}/recommendations/v1/courses`)
 )
