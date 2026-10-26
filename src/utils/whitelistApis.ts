@@ -8489,7 +8489,7 @@ export const API_LIST = {
             ROLE.MDO_LEADER,
           ],
         },
-      '/proxies/v8/formsConfig/v2/admin/read': {
+      '/proxies/v8/formsConfig/v2/admin/read/:id': {
         checksNeeded: [CHECK.ROLE],
         // tslint:disable-next-line: object-literal-sort-keys
         ROLE_CHECK: [
@@ -9481,6 +9481,7 @@ export const API_LIST = {
             '/proxies/v8/formsConfig/v1/create',
             '/proxies/v8/formsConfig/v1/read',
             '/proxies/v8/formsConfig/v1/update',
+            '/proxies/v8/formsConfig/v2/admin/read/:id',
             '/proxies/v8/org/v1/status/update',
             '/proxies/v8/course/v2/unenroll',
             '/proxies/v8/course/v1/reenroll',
